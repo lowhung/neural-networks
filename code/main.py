@@ -29,9 +29,6 @@ if __name__ == '__main__':
         n,d = X.shape
         t = Xtest.shape[0]
 
-        # model = NeuralNet(
-        #                 solver="lbfgs",
-        #                 hidden_layer_sizes=(40), alpha=0.05, activation='logistic', max_iter=3000)
         model = NeuralNet(
                         solver="lbfgs",
                         hidden_layer_sizes=(120,100), alpha=2, activation='logistic', max_iter=4000)
